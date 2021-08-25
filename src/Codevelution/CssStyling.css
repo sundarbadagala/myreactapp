@@ -1,0 +1,22 @@
+
+/* CssStyleing.js */
+
+.change-color{
+    color: orangered;
+}
+.font-change{
+    font-size: 20px;
+    font-family: cursive;
+}
+.back-change{
+    background-color: orchid;
+}
+.card, .subcard{
+    color: red;
+}
+
+/* CssStyling2.js */
+
+.styles{
+    color: green;
+}

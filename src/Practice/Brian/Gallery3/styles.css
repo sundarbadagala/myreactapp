@@ -1,0 +1,35 @@
+body{
+    background:linear-gradient(90deg, rgb(185, 183, 183)0%, rgb(136, 127, 127)100%);
+}
+.gallery-main{
+    /* border: 1px solid black; */
+    width: 100%;
+    margin:auto;
+    /* margin-top: 10px; */
+}
+.btn-div{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(90, 90, 202);
+    /* margin: 10px 0 10px 0; */
+    display: flex;
+    justify-content: center;
+}
+.img-div{
+    
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.banner{
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #918e8e;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.movie-section{
+    width: 780px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px black;
+    background-color: lightgray;
+}

@@ -1,0 +1,30 @@
+.main{
+    border: 1px solid black;
+    margin: auto;
+    width: 95%;
+    margin-top: 20px;
+}
+form{
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+}
+.firstName{
+    width: 50%;
+}
+.lastName{
+    width: 50%;
+}
+form input{
+    border: 1px solid green;
+    width: 100%;
+}
+form button{
+    width: 100%;
+}
+span{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

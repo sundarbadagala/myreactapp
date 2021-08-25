@@ -1,0 +1,19 @@
+.footer-main{
+    background: linear-gradient(90deg, rgb(0,0,0)0%, rgb(0,0,0)100%);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+}
+@media screen and (max-width:960px){
+    .footer-main{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media screen and (max-width:720px){
+    .footer-main{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}

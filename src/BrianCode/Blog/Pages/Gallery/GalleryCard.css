@@ -1,0 +1,38 @@
+.gallery-main{
+    padding-top: 70px;
+}
+.btn-div{
+    background-color: rgb(88, 87, 88);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px;
+}
+.img-sub{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid #b3adad;
+    cursor: pointer;
+}
+
+@media screen and (max-width:960px){
+    .gallery-main{
+        padding-top: 0px;
+    }
+    .btn-div{
+        background-color: rgb(88, 87, 88);
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
+    .btn{
+        padding: 4px 10px;
+    }
+}

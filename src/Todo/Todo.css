@@ -1,0 +1,8 @@
+div{
+    background-color: blanchedalmond;
+    width: 800px;
+}
+.todo-form{
+    display: flex;
+    flex-direction: column;
+}
