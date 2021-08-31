@@ -27,6 +27,7 @@
     "react-simple-card": "^2.0.2",
     "react-slideshow-image": "^3.4.3",
     "react-ui-cards": "^2.0.0",
+    "reactjs-localstorage": "^1.0.1",
     "redux": "^4.1.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6",
