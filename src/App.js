@@ -15,7 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import Bootstrap from './Practice/Practice/Index'
 //import Bootstrap from './Test/Test'
 //import Bootstrap from './styledComponent/Button4'
-import Bootstrap from './Styles/Circle/Circle'
+import Bootstrap from './storage/localClass'
 
 function App() {
   return (
