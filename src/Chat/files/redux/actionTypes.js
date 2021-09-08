@@ -1,0 +1,11 @@
+export const USERS_LIST = 'USERS_LIST'
+export const ADD_USER = 'ADD_USER'
+export const SEND_MESSAGE='SEND_MESSAGE'
+export const SET_STYLE = 'SET_STYLE'
+
+export const GET_USER_ID = 'GET_USER_ID'
+
+export const FETCH_USERS_REQUEST = 'FETCH_USERS_REQUEST'
+export const FETCH_USERS_SUCESS = 'FETCH_USERS_SUCESS'
+export const FETCH_USERS_FAIL = 'FETCH_USERSFAILT'
+

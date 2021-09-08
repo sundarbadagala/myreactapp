@@ -1,24 +1,20 @@
 import React, { useEffect, useState } from 'react'
-import {reactLocalStorage} from 'reactjs-localstorage'
 
-function Local() {
-    const [name, setName]= useState('')
-    const [list, setList]= useState([])
-    const submitHandler=(e)=>{
-        e.preventDefault()
-        setList([...list, name])
+function Storage2() {
+    const [value, setValue]= useState('')
+    const [values, setValues]= useState([])
+    const clickHandler=()=>{
+        setValues([...values, value])
     }
     useEffect(()=>{
-        reactLocalStorage.set('name', JSON.stringify(list) )
-    },[list])
+        localStorage.setItem('value', JSON.stringify(values))
+    })
     return (
         <div>
-            <form onSubmit={submitHandler}>
-                <input type='text' value={name} onChange={(e)=>setName(e.target.value)}/>
-                <button type='submit'>Add</button>
-            </form>
+            <input type='text' value={value} onChange={(e)=>setValue(e.target.value)}/>
+            <button onClick={clickHandler}>Submit</button>
         </div>
     )
 }
 
-export default Local
+export default Storage2

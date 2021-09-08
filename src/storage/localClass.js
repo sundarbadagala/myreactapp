@@ -38,6 +38,11 @@ class Storage extends Component {
             list: this.state.list.filter(item => item.id !== id)
         })
     }
+    clickHandler=()=>{
+        this.setState({
+            list:[]
+        })
+    }
     render() {
         console.log(this.state.list)
         return (
@@ -46,16 +51,19 @@ class Storage extends Component {
                     <input type='text' value={this.state.name} onChange={(e)=>this.changeHandler(e)}/>
                     <button type='submit'>Add</button>
                 </form>
-                <div>
                 <ul>
                     {
                         this.state.list.map(item => 
-                            <li>
+                            <li key={item.id}>
                                 {item.task}
                                 <button onClick={()=>this.deleteItem(item.id)}>delete</button>
                             </li>)
                     }
                 </ul>
+                <div>
+                    {
+                        this.state.list.length>0 && <button onClick={this.clickHandler}>Clear All</button>
+                    }
                 </div>
             </div>
         )

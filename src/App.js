@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Bootstrap from './storage/localClass'
+import Main from './Scroll/scroll'
 
 function App() {
   return (
     <div className="App">
-      <Bootstrap/>
+      <Main/>
     </div>
   );
 }

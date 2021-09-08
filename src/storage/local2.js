@@ -1,50 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-const App = () => {
+function Storage() {
+    const [value, setValue]= useState('')
+    const addValue=()=>{
+        localStorage.setItem('name' , JSON.stringify('Sudar Rao'))
+    }
+    const getValue=()=>{
+        setValue(JSON.parse(localStorage.getItem('name')))
+    }
+    const removeItem=()=>{
+        localStorage.removeItem('name')
+    }
+    console.log(value)
+    return (
+        <div>
+            <button onClick={addValue}>Add</button>
+            <button onClick={getValue}>Get</button>
+            <button onClick={removeItem}>Remove</button>
+        </div>
+    )
+}
 
-   const [name, setName] = useState('');
-   const [pwd, setPwd] = useState('');
-
-   const handle = () => {
-      localStorage.setItem('Name', name);
-      localStorage.setItem('Password', pwd);
-   };
-   const remove = () => {
-      localStorage.removeItem('Name');
-      localStorage.removeItem('Password');
-   };
-   return (
-      <div className="App">
-         <span>Name of the user:</span>
-         <input
-            placeholder="Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-         /><br/>
-         <span>Password of the user:</span>
-         <input
-            type="password"
-            placeholder="Password"
-            value={pwd}
-            onChange={(e) => setPwd(e.target.value)}
-         />
-         <div>
-            <button onClick={handle}>Done</button>
-         </div>
-         {localStorage.getItem('Name') && (
-            <div>
-               Name: <p>{localStorage.getItem('Name')}</p>
-            </div>
-         )}
-         {localStorage.getItem('Password') && (
-            <div>
-               Password: <p>{localStorage.getItem('Password')}</p>
-            </div>
-         )}
-         <div>
-            <button onClick={remove}>Remove</button>
-         </div>
-      </div>
-   );
-};
-export default App;
+export default Storage

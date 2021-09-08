@@ -1,16 +1,12 @@
-import { applyMiddleware, combineReducers, createStore } from "redux";
-import { mobileReducer } from "../reducer/mobileReducer";
-import createSagaMiddleware from "@redux-saga/core";
-import { watchMobile } from "../saga/mobileSaga";
+import {applyMiddleware, createStore} from 'redux'
+import createSagaMiddleware from 'redux-saga'
+import rootReducer from '../reducers/rootReducer'
+import rootSaga from '../saga/rootSaga'
 
-const sagaMiddleware = createSagaMiddleware()
+const sagaMiddleware= createSagaMiddleware()
 
-const rootReducer= combineReducers({
-    mobiles: mobileReducer
-})
+const store = createStore(rootReducer, applyMiddleware(sagaMiddleware))
 
-const store= createStore(rootReducer, applyMiddleware(sagaMiddleware))
-
-sagaMiddleware.run(watchMobile)
+sagaMiddleware.run(rootSaga)
 
 export default store

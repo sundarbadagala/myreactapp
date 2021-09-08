@@ -1,27 +1,37 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
+export default function App() {
+  const [todo, setTodo] = useState("");
+  const [todos, setTodos] = useState([]);
 
-function Local() {
-    const [name, setName]= useState('')
-    const [list, setList]= useState([])
-    const changeHandler=(e)=>{
-        setName(e.target.value)
+  useEffect(() => {
+    const data = localStorage.getItem("todo")
+      ? JSON.parse(localStorage.getItem("todo"))
+      : [];
+    setTodos(data);
+  }, []);
+
+  useEffect(() => {
+    if (todos.length > 0) {
+      localStorage.setItem("todo", JSON.stringify(todos));
     }
-    const submitHandler=(e)=>{
-        e.preventDefault()
-        setList([...list, name])
-    }
-    console.log(list)
-    useEffect(()=>{
-        localStorage.setItem('list', JSON.stringify(list))
-    },[list])
-    return (
-        <div>
-            <form onSubmit={submitHandler}>
-                <input type='text' value={name} onChange={changeHandler}/>
-                <button type='submit'>Add</button>
-            </form>
-        </div>
-    )
+  }, [todos]);
+  const addTodo = (event) => {
+    setTodo(event.target.value);
+  };
+
+  const handleSubmit = () => {
+    setTodos((prev) => [...prev, todo]);
+  };
+
+  return (
+    <>
+      <input type="text" value={todo} onChange={addTodo} />
+      {todos.map((todo) => (
+        <h1 key={todo}>{todo}</h1>
+      ))}
+      <button type="submit" onClick={handleSubmit}>
+        add Todo
+      </button>
+    </>
+  );
 }
-
-export default Local

@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
+import React, {useState } from 'react'
 
-function Local() {
-    const [name, setName]= useState('')
-    //const [list, setList]= useState([])    
+function Storage2() {
+    console.log(JSON.parse(localStorage.getItem("value")),"don");
+const data = JSON.parse(localStorage.getItem("value"))?JSON.parse(localStorage.getItem("value")):[]
+    const [value, setValue]= useState(data);
+    const [values, setValues]= useState([])
     const clickHandler=()=>{
-        localStorage.setItem('name', name)
+        setValues([...values, value])
     }
+    localStorage.setItem("value",JSON.stringify(values))
     return (
         <div>
-            <input type='text' value={name} onChange={(e)=>setName(e.target.value)}/>
-            <button onClick={clickHandler}>Add</button>
+            <input type='text' value={value} onChange={(e)=>setValue(e.target.value)}/>
+            <button onClick={clickHandler}>Submit</button>
         </div>
     )
 }
 
-export default Local
+export default Storage2
