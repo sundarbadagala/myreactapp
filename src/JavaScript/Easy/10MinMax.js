@@ -18,7 +18,11 @@ function App() {
     console.log(Main2(arr))
     return (
         <div>
-            Find Min and Max vaues from an array
+            Find Min and Max vaues from an array<br/>
+            <code>
+                Input : [8,2,3,10,12,23] <br/>
+                Output : [2, 23] [min, max]
+            </code>
         </div>
     )
 }

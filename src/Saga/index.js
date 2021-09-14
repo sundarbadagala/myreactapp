@@ -1,3 +1,4 @@
+import React from 'react'
 import Mobile from './components/mobileDetails'
 import Users from './components/usersDetails'
 import Details from './components/dataDetails'
@@ -7,13 +8,14 @@ import store from './redux/store/store'
 
 function App() {
   return (
+    
     <Provider store={store}>
-      {/* <Mobile/>
+      <Mobile/>
       <hr/><br/><hr/>
       <Users/>
       <hr/><br/><hr/>
       <Details/>
-      <hr/><br/><hr/> */}
+      <hr/><br/><hr/>
       <Todo/>
     </Provider>
   );
