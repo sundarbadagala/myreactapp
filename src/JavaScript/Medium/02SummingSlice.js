@@ -12,7 +12,7 @@ function App() {
     // }
     // console.log(Main(arr, n))
 
-    const sliceSum = (arr, n) => arr.reduce((a, v, i) => i < n && a + v, 0);
+    const sliceSum = (arr, n) => arr.reduce((a, v, i) => i < n ? a + v : a, 0);
     console.log(sliceSum(arrs, num))
     return (
         <div>
