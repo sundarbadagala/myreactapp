@@ -18,12 +18,9 @@ const printObject = (data) => {
 function Main() {
   return (
     <div>
-      {printObject(data).map((d) => (
-        <>
-          <h1>{d.label}</h1> 
-          <h2>{d.value}</h2>
-        </>
-      ))}
+      {
+        printObject(data).map((d) => (<div key={d.label}>{d.label} {d.value}</div>))
+      }
     </div>
   );
 }
