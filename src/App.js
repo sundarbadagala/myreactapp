@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Main from './JavaScript/Medium/10RedundantFunction'
+import Main from './Moment/01parsing'
+// import Main from './Moment/01parsing'
 
 function App() {
   return (
