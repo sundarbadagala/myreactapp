@@ -4,3 +4,6 @@
 [submodule "src/Util"]
 	path = src/Util
 	url = https://github.com/sundarthedevoloper/Util.git
+[submodule "src/reactcomponents"]
+	path = src/reactcomponents
+	url = https://github.com/sundarthedevoloper/reactcomponents.git
