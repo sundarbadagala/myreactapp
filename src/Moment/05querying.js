@@ -1,5 +1,4 @@
 import moment from 'moment'
-import React, { memo } from 'react'
 
 function App() {
     console.log(moment('09-23-2021').isSame('09-23-2021'))
