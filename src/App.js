@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button} from './Bootstrap/mainbutton'
+// import Main from './Material/Layout/04BoxDemo'
+import Main from './Material/Customization/Theming/02Theming2'
+
 
 function App() {
   return (
     <div>
-      <Button/>
+      <Main/>
     </div>
   );
 }
