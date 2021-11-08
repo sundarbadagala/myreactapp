@@ -8,6 +8,9 @@ const data = {
     bike:'duke'
   };
 
+  delete data.class
+  console.log(data)
+
 function App() {
     const keys= Object.keys(data)
     console.log(keys)
