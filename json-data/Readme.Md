@@ -1,0 +1,1 @@
+npx json-server --watch json-data/filename --port 4000
