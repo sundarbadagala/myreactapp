@@ -1,0 +1,29 @@
+nav {
+    height: 50px;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(250, 211, 137);
+
+}
+
+nav a{
+    text-decoration: none;
+    margin: 5px;
+    color: tomato;
+}
+nav a.active{
+    color: teal;
+    font-weight: bold;
+}
+
+div>a{
+    text-decoration: none;
+    color: blue;
+    margin: 5px;
+}
+div>a.active{
+    text-decoration: underline;
+    color: blue;
+    margin: 5px;
+}

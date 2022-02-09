@@ -1,0 +1,9 @@
+nav{
+    height: 50px;
+    background-color: #cecece;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    margin: 5px;
+}
