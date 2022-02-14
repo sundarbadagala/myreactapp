@@ -1,13 +1,5 @@
 import React from "react";
 
-const data = {
-  name: "Sundar",
-  age: 23,
-  class: 10,
-  color: "red",
-  bike:'duke'
-};
-
 const printObject = (data) => {
   let arrData = [];
   for (let i in data) {
@@ -15,7 +7,7 @@ const printObject = (data) => {
   }
   return arrData;
 };
-function Main() {
+function Main({data}) {
   return (
     <div>
       {

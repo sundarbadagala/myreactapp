@@ -1,0 +1,14 @@
+.input{
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
+}
+
+.small{
+    padding: 4px;
+}
+.medium{
+    padding: 6px;
+}
+.large{
+    padding: 8px;
+}

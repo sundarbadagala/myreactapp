@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Utils/index'
+import Navbar from './components/Codevolution/ReactStoryBook'
 
 
 function App() {
   return (
     <div>
-      <Navbar count={900}/>
+      <Navbar/>
     </div>
   );
 }

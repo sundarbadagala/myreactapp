@@ -8,7 +8,7 @@ import Samsung from "./pages/RQProducts";
 import Redmi from "./pages/Products";
 import "./styles.css";
 
-// NOTE : Before start this page you need to run command   npx json-server --watch Json/data.json --port 400
+// NOTE : Before start this page you need to run command   npx json-server --watch json-data/data.json --port 400
 
 const queryClient = new QueryClient();
 

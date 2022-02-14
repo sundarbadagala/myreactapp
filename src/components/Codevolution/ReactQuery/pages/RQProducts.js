@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 import axios from "axios";
 
 const fetchProducts = () => {
-  return axios.get("http://localhost:4000/data");
+  return axios.get(`${process.env.REACT_APP_JSON_LINK}/data`);
 };
 
 function RQProducts() {

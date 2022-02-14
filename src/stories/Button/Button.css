@@ -1,0 +1,24 @@
+.button{
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover{
+    filter: brightness(150%);
+}
+
+.primary {
+    background-color: rgb(47, 60, 73);
+}
+.secondary{
+    background-color: rgb(121, 121, 121);
+}
+.warning{
+    background-color: rgb(245, 176, 0);
+}
+.danger{
+    background-color: crimson;
+}

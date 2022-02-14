@@ -7,7 +7,7 @@ function Redmi() {
     const [error, setError]=useState('')
 
     useEffect(()=>{
-        axios.get(`${process.env.REACT_APP_SECRET_NAME}/data`)
+        axios.get(`${process.env.REACT_APP_JSON_LINK}/data`)
         .then(res =>{
             setData(res.data)
             setIsLoading(false)
@@ -23,6 +23,7 @@ function Redmi() {
     if(error){
         return <h6>{error}</h6>
     }
+    console.log(process.env.REACT_APP_JSON_LINK)
     return (
         <div>
             {
