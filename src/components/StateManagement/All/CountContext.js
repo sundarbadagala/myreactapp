@@ -1,6 +1,6 @@
 import React from 'react'
 import {ButtonGroup, Button} from 'react-bootstrap'
-import {ProductConsumer} from './Context'
+import {ProductConsumer} from './useContext/Context'
 
 function Count() {
     return (

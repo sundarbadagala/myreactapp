@@ -1,12 +1,13 @@
 import React, {useState} from "react";
-import { ThemeProvider } from "styled-components";
+import { Fragment } from "react";
+import Content from './Content'
+
 import { lite, dark } from "./theme";
 import { Button } from "./styles";
-import { Fragment } from "react";
 import GlobalStyles from "./GlobalStyles";
-import Content from './Content'
 import With from './withTheme'
 import Context from './themeContext.js'
+import { ThemeProvider } from "styled-components";
 
 function Index() {
     const [mode, setMode]= useState(true)

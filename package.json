@@ -7,7 +7,7 @@
     "@bit/saivivek.react-test.videoplayer": "0.0.1",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
-    "@hookform/resolvers": "^2.8.4",
+    "@hookform/resolvers": "^2.8.8",
     "@mui/icons-material": "^5.0.3",
     "@mui/lab": "^5.0.0-alpha.50",
     "@mui/material": "^5.0.3",
@@ -70,7 +70,7 @@
     "yup": "^0.30.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start .env",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

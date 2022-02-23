@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import {ButtonGroup, Button} from 'react-bootstrap'
-import {ProductContext} from './Context'
+import {ProductContext} from './useContext/Context'
 
 function Count5() {
     const product=useContext(ProductContext)
